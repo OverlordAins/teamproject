@@ -124,6 +124,7 @@ input, textarea {
 .textarea-style {
     padding: 12px;
     height: 180px;
+    resize: none;
 }
 
 .feedback-section-form-btn {
