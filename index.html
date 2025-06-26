@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="teamproject section 8, form" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Ecotote</title>
+  </head>
+  <body>
+    <section class="feedback-section">
+      <div class="container">
+        <h2 class="feedback-section-article">
+          Залишились питання? Зв'яжіться з нами!
+        </h2>
+        <p class="feedback-section-paragraph">Ми тут, щоб допомогти!</p>
+        <form
+          class="feedback-section-form"
+          name="feedback_form"
+          autocomplete="off"
+        >
+          <label class="feedback-section-form-label" for="user-name"
+            >Ім'я</label
+          >
+          <input
+            class="feedback-section-form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Іван"
+            required
+          />
+          <label class="feedback-section-form-label" for="user-email"
+            >Електронна пошта</label
+          >
+          <input
+            class="feedback-section-form-input"
+            type="email"
+            name="user-email"
+            id="user-email"
+            placeholder="hello@ecotote.com"
+            required
+          />
+          <label class="feedback-section-form-label" for="user-comment"
+            >Повідомлення</label
+          >
+          <textarea
+            class="feedback-section-form-input textarea-style"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Введіть своє повідомлення..."
+            required
+          ></textarea>
+          <button class="feedback-section-form-btn" type="submit">
+            Надіслати
+          </button>
+        </form>
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="./images/bag1xdesk.jpg 1x, ./images/bag2xdesk.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/bag1xtablet.jpg 1x, ./images/bag2xtablet.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/bag1xmobile.jpg 1x, ./images/bag2xmobile.jpg 2x"
+          />
+          <img
+            class="feedback-section-bag-image"
+            src="./images/bag1xdesk.jpg"
+            alt="bag"
+            width="704"
+          />
+        </picture>
+      </div>
+    </section>
+  </body>
+</html>

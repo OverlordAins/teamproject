@@ -1,0 +1,182 @@
+body {
+    font-family: "Fira Sans", "Comfortaa", sans-serif;
+    color: #030a06;
+    background-color: #ebf8ed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    font-family: inherit;
+    color: currentColor;
+    cursor: pointer;
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+input, textarea {
+    font-family: inherit;
+    padding: 0;
+}
+
+.container {
+    max-width: 320px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/*! -----SECTION8  FEEDBACK-FORM----- !*/
+
+.feedback-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.feedback-section-article {
+    font-family: "Comfortaa", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        margin-bottom: 24px;
+}
+
+.feedback-section-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.feedback-section-form {
+    margin-bottom: 24px;
+}
+
+.feedback-section-form-label {
+    line-height: 1.6;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.feedback-section-form-input {
+    margin-bottom: 24px;
+    display: block;
+    height: 42px;
+    width: 100%;
+    outline: transparent;
+    background-color: rgba(3, 10, 6, 0.05);
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+.feedback-section-form-input::placeholder {
+    line-height: 1.6;
+    color: rgba(3, 10, 6, 0.6);
+}
+.textarea-style {
+    padding: 12px;
+    height: 180px;
+}
+
+.feedback-section-form-btn {
+    line-height: 1.6;
+    color: #fff;
+    padding: 12px 24px;
+    background-color: #030a06;
+    border: 1px solid #030a06;
+    border-radius: 6px;
+    min-width: 288px;
+}
+
+.feedback-section-bag-image {
+    border-radius: 40px;
+}
+
+
+
+/*? -----SECTION8  FEEDBACK-FORM-END----- ?*/
+
+
+/*! -----------768----------- */
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+
+    .feedback-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+
+
+
+}
+
+
+/*! -----------1440----------- */
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        min-width: 1440px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+
+
+}
