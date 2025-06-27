@@ -26,51 +26,54 @@
     <title>Ecotote</title>
   </head>
   <body>
-    <section class="feedback-section" id="feedback-section-id">
+    <section class="support-section" id="support">
       <div class="container">
         <div class="content-wrapper">
-          <h2 class="feedback-section-article">
+          <h2 class="support-section-article">
             Залишились питання? Зв'яжіться з нами!
           </h2>
-          <p class="feedback-section-paragraph">Ми тут, щоб допомогти!</p>
+          <h3 class="support-section-paragraph">Ми тут, щоб допомогти!</h3>
           <form
-            class="feedback-section-form"
-            name="feedback_form"
+            class="support-section-form"
+            name="support_form"
             autocomplete="off"
           >
-            <label class="feedback-section-form-label" for="user-name"
+            <label class="support-section-form-label" for="user-name"
               >Ім'я</label
             >
             <input
-              class="feedback-section-form-input"
+              class="support-section-form-input"
               type="text"
               name="user-name"
               id="user-name"
               placeholder="Іван"
+              minlength="5"
               required
             />
-            <label class="feedback-section-form-label" for="user-email"
+            <label class="support-section-form-label" for="user-email"
               >Електронна пошта</label
             >
             <input
-              class="feedback-section-form-input"
+              class="support-section-form-input"
               type="email"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
               name="user-email"
               id="user-email"
               placeholder="hello@ecotote.com"
               required
             />
-            <label class="feedback-section-form-label" for="user-comment"
+            <label class="support-section-form-label" for="user-comment"
               >Повідомлення</label
             >
             <textarea
-              class="feedback-section-form-input textarea-style"
+              class="support-section-form-input textarea-style"
               name="user-comment"
               id="user-comment"
               placeholder="Введіть своє повідомлення..."
+              maxlength="500"
               required
             ></textarea>
-            <button class="feedback-section-form-btn" type="submit">
+            <button class="support-section-form-btn" type="submit">
               Надіслати
             </button>
           </form>
@@ -91,7 +94,7 @@
               srcset="./images/bag1xmobile.jpg 1x, ./images/bag2xmobile.jpg 2x"
             />
             <img
-              class="feedback-section-bag-image"
+              class="support-section-bag-image"
               src="./images/bag1xdesk.jpg"
               alt="bag"
               width="644"
