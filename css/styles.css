@@ -136,6 +136,11 @@ input, textarea {
     border: 1px solid #030a06;
     border-radius: 6px;
     min-width: 288px;
+    outline: none;
+}
+.support-section-form-btn:is(:hover, :focus) {
+    color: #030a06;
+    background-color: unset;
 }
 
 .support-section-bag-image {
