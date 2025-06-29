@@ -114,8 +114,7 @@ input, textarea {
 .support-section-form-input:invalid {
     color: #d64040;
 }
-.support-section-form-input:not(:placeholder-shown):invalid + .text-invalid-inp,
-.support-section-form-input:not(:placeholder-shown):invalid + .text-invalid-ta {
+.support-section-form-input:not(:placeholder-shown):invalid + p {
     display: block;
 }
 
