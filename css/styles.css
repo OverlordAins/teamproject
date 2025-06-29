@@ -78,9 +78,7 @@ input, textarea {
     line-height: 1.6;
     margin-bottom: 8px;
     display: block;
-    margin-top: 24px;
 }
-.support-section-form-label:first-child {margin-top: 0;}
 
 .support-section-form-input {
     display: block;
@@ -115,21 +113,40 @@ input, textarea {
     color: #d64040;
 }
 .support-section-form-input:not(:placeholder-shown):invalid + p {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-top: 24px;
+}
+.input-wrapper:first-child {
+    margin-top: 0;
 }
 
 .text-invalid-inp {
+    position: absolute;
+    top: 100%;
+    left: 0;
     font-size: 12px;
     line-height: 1.6;
     color: #d64040;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
 }
 
 .text-invalid-ta {
+    position: absolute;
+    top: 100%;
+    left: 0;
     font-size: 16px;
     line-height: 1.6;
     color: #d64040;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
 }
 
 .support-section-form-btn {
