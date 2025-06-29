@@ -108,10 +108,9 @@ input, textarea {
 }
 .support-section-form-input:not(:placeholder-shown):invalid {
     border-color: #d64040;
-}
-.support-section-form-input:invalid {
     color: #d64040;
 }
+
 .support-section-form-input:not(:placeholder-shown):invalid + p {
     opacity: 1;
     visibility: visible;
